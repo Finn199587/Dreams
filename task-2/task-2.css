@@ -1,0 +1,122 @@
+body
+{
+	background-color: lightgray;
+}
+
+div.body2
+{
+	background-color:white;
+    padding:1.3em 1em;
+    margin:2em;
+    border:1px solid darkgrey;
+    box-shadow:4px 4px 3px darkgrey;
+}
+#head
+{
+	background-color: #333;
+	border:1px #333 solid;
+	width: 100%;
+	height: 4em;
+
+}
+#logo
+{
+	top:18px;
+	left: 40px;
+	position: absolute;
+}
+#head > ul
+{
+	float: right;
+	margin-right: 1em;
+}
+#head li
+{
+	float: left;
+	margin-left: 1.1em;
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+#head li a
+{
+	color: white;
+	text-decoration: none;
+}
+#head li:last-child a
+{
+	color:gray;
+}
+body>div>h2:nth-child(2)
+{
+	color: gray;
+	font-size:100%;
+}
+body>div>span
+{
+    font-size:75%;
+    color:grey;
+}
+
+body>div>p.sj
+{
+	text-indent: 2em;
+}
+#title2 ul li
+{
+	list-style: none;
+	font-weight: bold;
+}
+.picture
+{
+	border:1px gray solid;
+	width: 10em;
+	height: 10em;
+	margin-left: 4em;
+	
+}
+.picture li
+{
+	list-style: none;
+	font-weight: bold;
+}
+.picture ul :first-child li
+{
+	color:red;
+}
+.picture img
+{
+	position: relative;
+	left: -33px;
+	bottom: 1px;
+	width: 9em;
+	height: 7.5em;
+}
+table
+{	
+	width: 100%;
+	border-collapse: collapse;
+}
+thead
+{
+	background-color: #333;
+	color: white;
+	border-left: 1px lightgray solid;
+}
+tbody td
+{
+	border-top: 1px lightgray solid;
+	border-left: 1px lightgray solid;
+	border-right: 1px lightgray solid;
+
+}
+
+table a
+{
+	border:none;
+}
+tfoot
+{
+	background-color: lightgray;
+	font-weight: bold;
+}
