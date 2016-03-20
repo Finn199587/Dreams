@@ -1,0 +1,31 @@
+
+.main
+{
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	overflow: hidden;
+	background: #ccc;
+	margin: -100px 0 0 -200px;
+
+}
+.yellow
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #fc0;
+	position: absolute;
+}
+.a
+{
+	top:-50px;
+	left: -50px;
+}
+.b
+{
+	right: -50px;
+	bottom: -50px;
+}
