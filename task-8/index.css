@@ -1,0 +1,8 @@
+@charset utf8;
+
+.content {
+	height: 50px;
+	border: 1px solid #999;
+	background: #eee;
+	margin-bottom: 20px;
+}
