@@ -1,0 +1,765 @@
+*{
+	margin: 0 ;
+	padding: 0;
+}
+body{
+	margin: 0 auto;
+}
+header{
+	width: 1520px;
+	height: 70px;
+	background-color: #2189C0;
+
+}
+div.logo{
+	float: left;
+	height: 45px;
+	width: 45px;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 60px;	
+}
+div.logo-inner{
+	display: inline-block;
+	height: 20px;
+	width: 20px;	
+	border-top: 4px #2189C0 solid;
+	border-left: 4px #2189C0 solid;
+	margin: 22px
+}
+div.search{
+	width: 350px;
+	height: 30px;	
+	background-color: white;
+	border-radius: 20px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	padding: 0
+}
+div.search img{
+	margin-top: 8px;
+	margin-left: 15px;
+}
+div.search input{
+	width: 300px;
+	height: 20px;
+	margin-top: 0px;
+	border: 0;
+}
+div.login{
+	float: right;
+	margin-top: 25px;
+	margin-right: 150px;
+}
+div.login a{
+	text-decoration: none;
+	color: white;
+}
+/**/
+section#left{
+	width: 300px;
+	height: 1280px;
+	background-color: #2B2E3D;
+	position: absolute;
+	margin-left: 0;
+
+}
+section#left div.circle{
+	width: 50px;
+	border:2px solid #B9BABE;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: 50px;
+	border-radius: 50%;	
+}
+section#left div.circle p{
+	color: white;
+	margin-top: -35px;
+	margin-left: 70px;
+	opacity: 0.9;
+}
+section#left div.circle div.circle-inner{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #B9BABE;
+	margin:2.5px auto;
+}
+section#left div.info{
+	display: flex;
+	margin-left: 50px;
+	margin-top: 30px;
+	justify-content: space-around;
+	width: 150px;
+	color: white;
+	opacity: 0.5;
+	text-align: center;
+}
+section#left div.info div{
+	border-left: 2px white solid;
+	opacity: 0.3
+}
+section#left div.nav{	
+	margin-top: 30px;	
+
+}
+section#left div.nav ul.navtotal{
+	list-style: none;	
+	height: 200px;
+	background-color: #373D4D;
+	padding-top: 20px;
+	padding-left: 40px;	
+}
+section#left div.nav ul.navlow{
+	list-style: none;
+	padding-top: 0px;
+	padding-left: 40px;	
+	line-height: 60px
+}
+section#left div.nav ul.navlow li a{
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.6
+}
+section#left div.nav ul.navlow li a:hover{
+	opacity: 1
+}
+section#left div.nav ul.navtotal li a{
+	color: #fff;
+	text-decoration: none;
+}
+section#left div.nav ul.navtittle{
+	color:#fff;
+	list-style: none;
+	float: right;
+	margin-right: 150px;
+	line-height: 30px;
+}
+section#left div.nav ul.navtittle li{
+	opacity: 0.5
+}
+section#left div.nav ul.navtittle li:hover{
+	opacity: 1;
+}
+section#left div.nav ul.navtittle li.navtext ul{
+	opacity: 0.5;
+	list-style:none;
+}
+section#left div.nav ul.navtittle li.navtext ul:hover{
+	opacity: 1;
+}
+
+section#breadright{
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 300px;
+	height: 40px;
+	width: 80.5%;
+	background-color: #FFFFFF
+}
+section#breadright ol.breadcrumb {
+	padding: 8px 40px;
+	margin-bottom: 20px;
+	list-style: none;
+	width: 500px;
+}
+
+section#breadright ol.breadcrumb> li {
+display: inline-block;
+}
+section#breadright ol.breadcrumb li a{
+	color: #B9BABE;
+	text-decoration: none;
+
+}
+.breadcrumb> li + li:before {
+padding: 0 5px;
+color: #ccc;
+content: "/\00a0";
+}
+
+.breadcrumb> .active {
+color: #2189BF;
+}
+section#mainright{
+	height: 1200px;
+	width: 1140px;
+	background-color: #EDEDED;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 40px;
+	padding:20px 40px;	
+}
+section#mainright div.checkbox{
+	width: 100%;
+	height: 100px;
+	background-color: #fff
+	
+}
+section#mainright div.checkbox div.item{
+	padding:20px 40px;
+	position: absolute;
+}
+section#mainright div.checkbox div.item label{
+	padding-right: 10px;
+	color: #B9BABE;
+	font-size: 90%;
+
+}
+section#mainright div.checkbox div.item select{
+	border: 1px #B9BABE solid;
+	border-radius: 2px;
+	width: 80px;
+	height: 30px;
+	padding-left: 10px;
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url(task_9_3.jpg) no-repeat scroll transparent right ; 
+}
+section#mainright div.checkbox div.item option{
+	text-align: center;
+}
+section#mainright div.checkbox form.change{
+	position: absolute;
+	padding:20px 10px;
+	margin-left: 200px;
+
+}
+section#mainright label{
+	color: #B9BABE;
+	font-size: 90%;
+	padding-right: 10px;
+}
+section#mainright div.checkbox form.change select{
+	border: 1px #B9BABE solid;
+	border-radius: 2px;
+	width: 150px;
+	height: 30px;
+	padding-left: 10px;
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url(task_9_3.jpg) no-repeat scroll transparent right ; 
+  margin-bottom: 5px;
+}
+section#mainright div.checkbox img{
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 405px
+}
+section#mainright div.checkbox form.detail{
+	position: absolute;
+	padding:20px 10px;
+	margin-left: 450px;
+	width: 500px;
+}
+section#mainright div.checkbox form.detail input{
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  	border: 0;
+  	width: 150px;
+	height: 30px;
+	border: 1px #B9BABE solid;
+	border-radius: 2px;
+	padding-left: 15px;
+	margin-right: 20px;
+
+}
+section#mainright div.checkbox form.detail select{
+	border: 1px #B9BABE solid;
+	border-radius: 2px;
+	width: 80px;
+	height: 30px;
+	padding-left: 10px;
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url(task_9_3.jpg) no-repeat scroll transparent right ; 
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+section#mainright div.checkbox form.detail select.ten{
+	border: 1px #B9BABE solid;
+	border-radius: 2px;
+	width: 167px;
+	height: 30px;
+	padding-left: 10px;
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background: url(task_9_3.jpg) no-repeat scroll transparent right ; 	
+}
+section#mainright button.righttop{
+	position: absolute;
+	padding:5px 15px;
+	margin-top: 40px;
+	margin-left: 860px;
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  border: 0;
+  cursor: pointer;
+  background-color: #2189C0;
+  border-radius: 2px;
+  color: #fff;
+}
+section#mainright div.time{
+	width: 1135px;
+	height: 85px;
+	
+	margin-top: 15px;
+box-shadow: 0 0 8px  #ccc
+}
+section#mainright div.time div.row:before,
+section#mainright div.time div.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*='col-']{
+	float: left;
+	min-height: 1px;	
+	text-align: center;
+	background-color: white;
+	
+}
+.col-1{width: 40px;height: 85px;background: url(1.jpg)no-repeat scroll transparent center;background-color: white;margin-right: 8px}
+.col-2{width:140px;height: 85px;margin-right: 8px;}
+.col-3{width:150px;height: 85px;margin-right: 0px}
+.col-1:hover,.col-2:hover,.col-3:hover{
+	border-top: 4px #398AC1 solid
+}
+div.col-3{
+	margin-right: 0px
+}
+p.time{
+	padding-top: 15px;
+	color: #373D4D
+}
+p.price{
+	font-size: 26px;
+	padding-top: 2px;
+	color: #EC6D10
+}
+p.price span{
+	font-size: 20px;
+	color: #373D4D;
+	opacity: 0.5
+}
+section#mainright div.time p.check{
+	font-size: 14px;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: -30px;
+	color: black
+}
+section#mainright div.time img{
+	margin-top: 30px;
+	margin-left: -60px;
+}
+section#mainright p.text{
+	margin-top: 25px;
+}
+section#mainright div.April{
+	margin-top: 5px;	
+	width: 1135px;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+section#mainright div.April div.green{
+	width: 250px;
+	height: 90px;
+	background-color: white;
+	border-left: 5px #43B29F solid;
+	box-shadow: 5px 5px 4px #ccc;
+}
+section#mainright div.April div.blue{
+	width: 250px;
+	height: 90px;
+	background-color: white;
+	border-left: 5px #398AC1 solid;
+	box-shadow: 5px 5px 4px #ccc;
+}
+section#mainright div.April div.red{
+	width: 250px;
+	height: 90px;
+	background-color: white;
+	border-left: 5px #CF4B36 solid;
+	box-shadow: 5px 5px 4px #ccc;
+}
+section#mainright div.April div.yellow{
+	width: 250px;
+	height: 90px;
+	background-color: white;
+	border-left: 5px #E1CD46 solid;
+	box-shadow: 5px 5px 4px #ccc;
+}
+section#mainright div.April  p.num{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+section#mainright div.April  p.texta{
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 12px;
+	color:#92949F
+}
+section#mainright div.April div.green div{
+	width: 80px;
+	height: 55px;
+	background-color: #43B29F;
+	margin-left: 150px;
+	margin-top: -45px
+	}
+section#mainright div.April div.blue div{
+	width: 80px;
+	height: 55px;
+	background-color: #398AC1;
+	margin-left: 150px;
+	margin-top: -45px
+}
+section#mainright div.April div.red div{
+	width: 80px;
+	height: 55px;
+	background-color: #CF4B36;
+	margin-left: 150px;
+	margin-top: -45px
+}
+section#mainright div.April div.yellow div{
+	width: 80px;
+	height: 55px;
+	background-color: #E1CD46;
+	margin-left: 150px;
+	margin-top: -45px
+}
+section#mainright div.table{
+	width: 1135px;	
+	margin-top: 25px;
+	height: 350px;
+	display: flex;
+	justify-content: space-between;
+}
+section#mainright  div.tableleft{
+	height: 350px;
+	box-shadow: 4px 4px 4px #ccc;
+	border-radius: 10px;
+	background-color: white;
+	width: 680px;
+	border:1px #ccc solid;
+}
+section#mainright   div.tableleft div.tittle{
+	width: 660px;
+	height: 50px;
+	background-color: #F4F5F7;
+	padding-left: 20px;
+	border-bottom:1px #ccc solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+section#mainright  div.tableleft div.tittle p{
+	padding-top: 10px;
+	color:#92959E;
+}
+
+/* 每个checked，只有一个内容块被设置为显示*/
+#label01:checked ~ #conten li:nth-child(1){display: block;}
+#label02:checked ~ #conten li:nth-child(2){display: block;}
+#label03:checked ~ #conten li:nth-child(3){display: block;}
+#label04:checked ~ #conten li:nth-child(4){display: block;}
+#label05:checked ~ #conten li:nth-child(5){display: block;}
+/* 其他则设置为隐藏*/
+#label01:checked ~ #content li:nth-child(n+2){display: none;}
+#label02:checked ~ #content li:nth-child(1),
+#label02:checked ~ #content li:nth-child(3),
+#label02:checked ~ #content li:nth-child(4),
+#label02:checked ~ #content li:nth-child(5){display: none;}
+#label03:checked ~ #content li:nth-child(1),
+#label03:checked ~ #content li:nth-child(2),
+#label03:checked ~ #content li:nth-child(4),
+#label03:checked ~ #content li:nth-child(5){display: none;}
+#label04:checked ~ #content li:nth-child(1),
+#label04:checked ~ #content li:nth-child(2),
+#label04:checked ~ #content li:nth-child(3),
+#label04:checked ~ #content li:nth-child(5){display: none;}
+#label05:checked ~ #content li:nth-child(1),
+#label05:checked ~ #content li:nth-child(2),
+#label05:checked ~ #content li:nth-child(3),
+#label05:checked ~ #content li:nth-child(4){display: none;}
+/* 隐藏Input按钮，它只是跳板嘛*/
+#label01, #label02, #label03,#label04, #label05{display:none;}
+.bg1,.bg2,.bg3,.bg4,.bg5{background-color: #EDECF0;}
+#tag{
+	width: 600px;
+	height: 300px;
+	margin: 20px auto;
+	border:1px solid black;
+	overflow: hidden;
+}
+#opt{
+	width: 600px;
+	height: 50px;
+	padding: 20px;
+}
+#opt label{
+	float: left;
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	font:18px;	
+	cursor: pointer;
+	margin-left: 5px;
+	padding-top: 5px;
+	border-radius:3px;
+}
+#opt label:first-child{
+	background-color: white;
+	border-top:1px gray solid;
+	border-right:1px gray solid;
+	border-left: 1px gray solid;
+}
+#opt label:hover{
+	border-top:1px gray solid;
+	border-right:1px gray solid;
+	border-left: 1px gray solid;
+	background-color: white;
+}
+#content{
+	width: 630px;
+	height: 220px;
+	list-style: none;
+	background-color: white;
+	margin-top: -40px;
+	border:1px solid gray;
+	margin-left: 25px;
+}
+#content li{	
+	margin: 20px auto;
+	background-color: #fff;
+}
+#content li  table{
+	/*border:1px lightgray solid;*/
+	margin: 10px auto;	
+	border-collapse: collapse;
+}
+
+#content li  table td{	
+	border:1px lightgray solid;
+	padding: 5px 35px;
+	font-size: 14px;
+}
+#content li  table td:hover{
+	background-color: #EDECF0;
+	cursor: pointer;
+}
+
+section#mainright div.tableright{
+	height: 350px;
+	box-shadow: 4px 4px 4px #ccc;
+	border-radius: 10px;
+	background-color: white;
+	width: 445px;
+}
+section#mainright  div.tableright div.tittle{
+	width: 425px;
+	height: 50px;
+	background-color: #F4F5F7;
+	padding-left: 20px;
+	border-bottom:1px #ccc solid;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+section#mainright div.tableright div.tittle p{
+	padding-top: 10px;
+	color:#92959E;
+}
+section#mainright div.table div.tableright form{
+	margin: 20px auto;
+	width: 70%;
+	height: 240px;
+	
+	display: flex;
+}
+section#mainright div.table div.tableright form ul{
+	margin-left: 0px;
+	
+}
+section#mainright div.table div.tableright form ul li{
+	list-style: none;
+	border-bottom:1px solid #e7e7e7;	
+	padding-left: 14px;
+	height: 50px;
+	width: 300px;
+}
+section#mainright div.table div.tableright form ul li:nth-child(2) div{float:left;padding-left:13px;padding-bottom: 4px;}
+section#mainright div.table div.tableright form ul li:nth-child(2) div:nth-child(1){width:120px;border-right:1px solid #e7e7e7;padding-left: 0;}
+section#mainright div.table div.tableright form ul li:nth-child(3){height:80px;}
+section#mainright div.table div.tableright form ul li span{
+	color:#c3c2c2;display: block;
+}
+section#mainright div.table div.tableright form input{
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  	height: 20px;
+  	width: 330px;
+  	border-style: none;
+}
+section#mainright div.table div.tableright form input:nth-child(2){
+	width: 120px;
+}
+section#mainright div.table div.tableright form div p{
+	
+	color:#c3c2c2;display: block;
+}
+section#mainright div.table div.tableright form textarea {
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  	border:0;
+}
+section#mainright div.table div.tableright form input[type="checkbox"]{
+	width: 20px;
+	margin: 10px;
+	cursor: pointer;
+}
+section#mainright div.table div.tableright form input label span{
+	position: absolute;
+}
+section#mainright div.table div.tableright form button{
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  	border:0;
+  	cursor: pointer;
+  	width: 50px;
+  	height: 30px;
+  	background-color: #2189C0;
+  	color: white;
+  	margin-left: 100px;
+}
+section#mainright div.left{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+section#mainright div.left div.container{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+section#mainright div.left select,
+section#mainright div.left button{
+	padding: 2px 15px;
+
+}
+section#mainright div.left select.month{
+	width: 80px;
+	text-align: center;
+}
+section#mainright div.left button.today{
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  	border:1px solid black;
+  	background-color: #fff
+}
+section#mainright div.left div.number{
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px solid #2189C0;
+	padding-top: 5px;
+	width: 90%;
+	margin: 15px auto;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #ccc
+}
+section#mainright div.left div.date{
+	text-align: center;
+
+}
+section#mainright div.left div.date table{	
+	margin:-15px auto;
+	empty-cells: show;	
+	height: 200px;
+	width: 400px;
+}
+section#mainright div.left div.date td{
+	margin: 5px;
+	font-size: 12px;
+	width: 20px;
+}
+section#mainright div.left div.date td:hover{
+	border:1px #E1CD46 solid;
+	cursor: pointer;
+}
+section#mainright div.left div.date td span{
+	color: red;
+}
+section#mainright div.left div.date td.spcial{
+	border:1px #E1CD46 solid;
+}
+section#mainright div.box{
+	margin: 20px auto;
+	border:2px #EDEDED solid;
+	height: 260px;
+	width: 600px;
+}
+section#mainright div.box table{
+	border-collapse: collapse;
+	width: 600px;
+	height: 260px;
+	
+}
+section#mainright div.box table td{
+	border:1px #ccc solid;
+	height: 20px;
+	font-size: 12px;
+	text-align:center;
+}
+section#mainright div.box table td:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+section#mainright div.box table td.rank,
+section#mainright div.box table td.brand{
+	width: 10%;
+	text-align: center;
+}
+/*bootstrap.css文件第4516行～第4524行*/
+.progress {
+	float: right;
+	width: 300px;
+	height: 5px;  
+	overflow: hidden;
+	background-color: #f5f5f5;
+	border-radius: 1px;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    margin-right: 50px;
+    margin-top: 5px;
+}
+/*bootstrap.css文件第4525行～第4538行*/
+.progress-bar {  
+	width: 300px;
+	height: 100%;  
+	color: #fff;
+	text-align: center;
+	background-color: #428bca;
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease;
+}
+section#mainright div.box table td.red div.progress-bar {
+	background-color: #F3132D;
+}
+section#mainright div.box table td.orange div.progress-bar{
+	background-color: #EC762E
+}
