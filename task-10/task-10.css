@@ -1,0 +1,62 @@
+body{
+	padding: 0px;
+	margin: 0;
+	background-color: #E1E1E1
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border:1px #aaa solid;
+	height: 500px;
+}
+.container div{
+	margin: 20px;
+}
+
+.box120{
+	width: 150px;
+	height: 120px;
+	border:1px #f00 solid;
+
+}
+.box100{
+	width: 150px;
+	height: 100px;
+	border:1px #f00 solid;
+}
+.box40{
+	width: 150px;
+	height: 40px;
+	border:1px #f00 solid;
+}
+.box200{
+	width: 150px;
+	height: 200px;
+	border:1px #0f0 solid;
+}
+
+
+  @media all and (max-width: 640px) {
+ div.container{
+ 	display: flex;
+ 	 align-items: flex-start;
+ 	 flex-wrap: wrap;
+ }
+
+ .box200{
+ 	order: -1;
+
+ }
+ .box40{
+ 	order: 1
+ }
+ .box100{
+ 	order: 3;
+ }
+  .box120{
+ 	order: 2
+ }
+  }
