@@ -26,20 +26,7 @@ var aqiData = [
 
 (function () {
 /*在注释下方编写代码*/
- function sortMethod(a, b){
-    return b[1] - a[1];
-  }
-  aqiData.sort(sortMethod);
-  var ulNode = document.getElementById('aqi-list');
-  var c = 0;
-   for (var i = 0; i < aqiData.length; ++i) {
-    var liNode = document.createElement("li");
-    if (aqiData[i][1] >= 60) {
-        liNode.innerHTML = '第' + (++c) + '名：' + aqiData[i][0] + ' ' + aqiData[i][1];     
-        ulNode.appendChild(liNode);
-    } 
-  }
-
+ 
 })();
 
 </script>
