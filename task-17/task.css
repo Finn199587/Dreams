@@ -1,0 +1,56 @@
+* { 
+	font-family: "Microsoft YaHei", yaHei;
+}
+fieldset{
+	width: 1200px;
+	margin: 0 auto;
+	border-radius: 15px;
+	text-align: center;
+}
+legend{
+	color: #10155B;
+	font-size: 20px;
+}
+label{
+	position: relative;
+	display: inline-block;
+	width: 50px;height: 50px;
+}
+label span{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	border: 1px #10155B solid;
+	cursor: pointer;
+	border-radius: 50%;
+}
+input{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.selected{
+	background: #10155B;
+	color: white;
+}
+#city-select{
+	box-sizing: border-box;
+	width: 110px;
+	letter-spacing: 10px;
+	background-color: white;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	font-size: 1em;
+	padding: 0 30px;
+}
+.aqi-chart-wrap{
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	margin: 50px auto;
+	box-shadow: 0 0 5px #999999;
+	border-radius: 15px;
+	overflow: hidden;
+}

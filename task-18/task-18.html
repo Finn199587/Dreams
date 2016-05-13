@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+fieldset{width: 600px;height: 100px;position: relative;border: 1px solid #06546E;border-radius: 15px;margin: 0 auto;}	
+input{width: 70px;padding:  5px;}
+span{margin-left: 10px;width: 50px;height: 50px;background: pink;float: left;text-align: center;line-height: 50px;overflow: hidden;}
+</style>
+</head>
+<body>
+	<fieldset>
+		<legend>
+			<input type="text">
+			<input type="button" value="左侧入" id="leftIn">
+			<input type="button" value="右侧入" id="rightIn">
+			<input type="button" value="左侧出" id="leftOut">
+			<input type="button" value="右侧出" id="rightOut">
+		</legend>
+		<div id="box"></div>
+	</fieldset>
+<script>
+	window.onload = function(){
+		function id(x){
+			if (typeof x === "string") {return document.getElementById(x);}
+		}
+		var oLeftIn = id("leftIn");
+		var oRightIn = id("rightIn");
+		var oLeftOut = id("leftOut");
+		var oRightOut = id("rightOut");
+		var oText = document.getElementsByTagName('input')[0];
+		var oBox = id("box");
+		var oTval = oText.value.trim();
+
+		oLeftIn.onclick = function(){
+			var oSpan = document.createElement('span');
+			if (!oText.value) {alert("输入错误");return;}
+			if (!oText.value.match(/^\d+$/) ) {alert("输入错误");return;}
+			oSpan.innerHTML = oText.value;
+			if (!oSpan) {oBox.appendChild(oSpan)}
+			else{	oBox.insertBefore(oSpan,oBox.children[0]);}
+
+		}
+		oRightIn.onclick = function(){
+			var oSpan = document.createElement('span');
+			if (!oText.value) {alert("输入");return;}
+			if (!oText.value.match(/^\d+$/) ) {alert("输入错误");return;}
+			oSpan.innerHTML = oText.value;
+			oBox.appendChild(oSpan);
+		}
+		leftOut.onclick = function(){
+			if (!oText.value) {alert("输入");return;}
+			if (!oBox.children[0]) {return}
+			oBox.removeChild(oBox.children[0]);
+		}
+		oRightOut.onclick = function(){
+			if (!oText.value) {alert("输入");return;}
+			if (!oBox.children[0]) {return}
+			oBox.removeChild(oBox.lastChild)
+		}
+	}
+</script>
+</body>
+</html>
